@@ -29,7 +29,7 @@ let e = new Promise((resolve) => {
 	} , 1000)
 })
 
-let x = Promise.any([a,b,c,d]);
+let x = Promise.any([a,b,c,d ,e]);
 x.then((data) => {
 	const elm = document.getElementById("output");
 	elm.innerText = data;
